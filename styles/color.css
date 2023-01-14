@@ -5,6 +5,47 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
 }
+.content{
+    background-color: #562EFF;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.logo{
+    display: flex;
+    gap: 15px;
+    padding: 25px 450px;
+    justify-content: center;
+}
+.logo img{
+    height: 51px;
+    width: 42px;
+    padding-top: 20px;
+}
+.logo p{
+    color:#FFFFFF;
+    font-size: 24px;
+    
+}
+ .right{
+    display: flex;
+}
+.navbar{
+   margin-right: 300px; 
+    gap: 25px;
+
+}
+.navbar li{
+   list-style-type: none;
+    display: inline;
+    color: #F3F1FF;
+    font-size: 16px;
+    padding: 35px 36px 0 35px;
+    margin-bottom: 35px;
+}
+.navbar img{
+    padding-top: 30px;
+}
 main{
     display: flex;
     flex-direction: column;
@@ -123,7 +164,10 @@ hr{
     .players, .blogs, .courses{
         grid-template-columns: repeat(1,1fr);
     }
-    .player, .blog{
+    .player, .blog, .content{
+        flex-direction: column;
+    }
+    .right, .navbar{
         flex-direction: column;
     }
 }
